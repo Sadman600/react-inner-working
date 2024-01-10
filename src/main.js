@@ -1,5 +1,12 @@
+import { MyApp } from "./test";
+
 const App = () => {
-    return React.createElement("p", { style: { color: "red" } }, "Hello React");
+    return React.createElement(
+        "p",
+        { style: { color: "red" } },
+        "Hello React",
+        MyApp()
+    );
 }
 
 
